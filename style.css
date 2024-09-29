@@ -1,0 +1,349 @@
+:root {
+    --back-color: rgb(255, 255, 255);
+    --for-color: #ddeedd;
+    --sec-color: #f0f8ff;
+    --shade-color:#c7d5c7;
+    --main-margin: 10%;
+    --sec-margin:3%;
+    --main-rad: 40px;
+    --main-font:"Late", sans-serif;
+    --shadow: 3px 3px 10px var(--shade-color);
+}
+
+html{
+    background-color: var(--back-color);
+}
+
+main{
+    align-content: center;
+    background-color: var(--back-color);
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    padding-bottom: var(--sec-margin);
+    font-size: 2rem;
+    font-family: var(--main-font);
+    font-size: 3rem;
+    color: rgb(61, 66, 62);
+}
+
+h2{
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    font-size: 1.7rem;
+    color: rgb(61, 66, 62);
+}
+h3{
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    font-family: var(--main-font);
+    color: rgb(61, 66, 62);
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: var(--main-font);
+    color: rgb(120, 139, 133);
+}
+
+a {
+    color: rgb(61, 66, 62);
+}
+
+nav {
+    background-color: var(--for-color);
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: var(--main-margin);
+    margin-right: var(--main-margin);
+    margin-bottom: var(--sec-margin);
+    border-radius: var(--main-rad);
+    box-shadow: var(--shadow);
+
+
+    
+    
+}
+
+.navitem{
+
+    display: inline-block;
+    padding: 10px var(--sec-margin);
+    
+    a {
+        text-decoration: none;
+    }
+
+
+}
+
+.navitem:hover{
+    background-color: var(--sec-color);
+}
+
+.profileContainer{
+    background-color: var(--for-color);
+    border-radius: var(--main-rad);
+    margin: var(--main-margin);
+    margin-top: var(--sec-margin);
+    box-shadow: var(--shadow);
+
+    img {
+       width: 40vw;
+        border-radius: var(--main-rad) 0 0 var(--main-rad);
+        border: 20px solid var(--sec-color);
+        margin-bottom: -4px;
+        
+    }
+}
+
+.profile {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding-left: var(--sec-margin);
+    padding-top: var(--sec-margin);  
+}
+
+.projectContainer {
+    text-align: center;
+    background-color: var(--sec-color);
+    padding: var(--main-margin) 0;
+}
+
+.project {
+    background-color: var(--for-color);
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    margin: 0 var(--sec-margin) var(--sec-margin) var(--sec-margin);
+    padding: var(--sec-margin);
+    border-radius: var(--main-rad);
+    box-shadow: var(--shadow);
+    vertical-align: top;
+
+    details {
+        font-family: var(--main-font);
+        font-size: 1.3rem;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: var(--main-rad);
+    }   
+    
+    h2 {
+        height: 100px;
+    }
+}
+
+.ServicesEducationContainer{
+    text-align: center;
+    background-color: var(--back-color);
+    padding-top: var(--main-margin);
+}
+
+.ServicesEducation{
+    text-align: left;
+    padding-top: 10px;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    vertical-align: top;
+    margin-left: var(--sec-margin);
+
+}
+
+.ServicesEducationContent{
+    text-align: left;
+    
+    background-color: var(--for-color);
+    padding-left: var(--sec-margin);
+    border-radius: var(--main-rad);
+    box-shadow: var(--shadow);
+    
+    
+}
+
+.item {
+    padding: 1%;
+    vertical-align: top;
+    height: 250px;
+
+    img {
+        display: inline-block;
+        width: 15%;
+        border: 10px solid var(--sec-color);
+        border-radius: var(--main-rad);        
+    }
+
+    p {
+        display: inline-block;
+        width: 75%;
+        margin-left: 5%;
+        margin-top: 10px;
+        vertical-align: top;
+        
+    }
+
+}
+
+@media (max-width: 1220px) {
+    .ServicesEducation{
+        display: block;
+        text-align: center;
+    }
+
+    .item {
+        height: auto;
+        text-align: center;
+    }
+
+    
+}
+
+.Experience {
+    text-align: center;
+    margin-top: var(--main-margin);
+    align-content: center;
+    margin: var(--main-margin);
+    padding-top: var(--sec-margin);  
+}
+
+#ExperienceContent{
+    text-align: left;
+    margin: 0 var(--sec-margin) var(--sec-margin) var(--sec-margin);
+    padding: var(--sec-margin) var(--main-margin) var(--sec-margin) var(--main-margin);
+    background-color: var(--for-color);
+    border-radius: var(--main-rad);
+    box-shadow: var(--shadow);
+}
+
+.SkillContainer{
+    text-align: center;
+    background-color: var(--sec-color);
+    padding: var(--main-margin) 0;    
+}
+
+#SkillText{
+    text-align: left;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    padding-right: var(--sec-margin);
+}
+
+.ContactMe {
+    background-color: var(--for-color);
+    text-align: center;
+    padding: var(--main-margin) 0;
+
+    iframe {
+        box-shadow: var(--shadow);
+    }
+  
+}
+
+
+#map {
+    margin-top: var(--sec-margin);
+    width: 49%;
+    display: inline-block;
+}
+
+#input {
+    
+    width: 50%;
+    height: 40px;
+    margin: 1% 0;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#message {
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+    text-align: top;
+    border: 1px solid black;
+    margin: 1% 0;
+}
+
+#SocialMedia {
+    display: inline-block;
+    background-image: url("Image\\SocialMedia.png");
+    background-repeat: no-repeat;
+    background-position: center 40px;
+    background-size: 400px;
+    height: 500px;
+    width: 45%;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+
+    a {
+        text-align: center;
+        display: block;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        margin: auto;
+        margin-top: .5%;
+    }
+
+    
+}
+
+#github {
+    position: absolute;
+    left: 45%;
+    top: 6%;
+    margin-top: 50%;
+}
+
+#linkedin {
+    position: absolute;
+    left: 45%;
+    top: 42%;
+    margin-top: 50%;
+}
+
+#facebook {
+    position: absolute;
+    left: 45%;
+    bottom: 2%;
+    margin-top: 50%;
+}
+
+#backtotop{
+    text-align: center;
+    padding-bottom: var(--main-margin);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    img{
+        border-radius: 50%;
+        padding: 5%;
+        background-color: var(--back-color);
+        box-shadow: var(--shadow);
+    }
+}
+
+footer{
+    text-align: center;
+}
+
+#footer{
+    display: inline-block;
+    width: 20%;
+    margin: 1% var(--sec-margin);
+}
+
+#MediaLinks {
+    img {
+        width: 30px;
+    }
+}
